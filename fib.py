@@ -23,6 +23,15 @@ def lucas_recursivo(k):
         return 1
     return lucas_recursivo(k - 1) + lucas_recursivo(k - 2)
  
+def fib_rapido(k):
+    '''
+    Regresa el numero Fk(el k-esimo numero de Fibonacci)
+    k: el numero de Fibonacci que queremos que nos regrese el programa
+    returns: el k-esimo numero de Fibonacci
+    '''
+    return pow(0.2, 0.5) * (pow(((1 + pow(5, 0.5))/2), k) - pow(((1 - pow(5, 0.5)) / 2), k))
+
+
 print("Fibonacci recursivo")
 for i in range(26):
     print("Fib" + str(i) + " = " + str(fib_recursivo(i)))
@@ -30,3 +39,7 @@ for i in range(26):
 print("Lucas recursivo")
 for i in range(26):
     print("Luc" + str(i) + " = " + str(lucas_recursivo(i)))
+
+print("Fibonacci rapido")
+for i in range(26):
+    print("Fib" + str(i) + " = " + str(fib_rapido(i)))

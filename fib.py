@@ -1,4 +1,5 @@
 # Ejercicio 1 de la tarea 1 de matematicas 4
+# Autor: Victor Zamora Gutierrez
 def fib_recursivo(k):
     '''
     Regresa el numero Fk(el k-esimo numero de Fibonacci)

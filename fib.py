@@ -29,7 +29,7 @@ def fib_rapido(k):
     k: el numero de Fibonacci que queremos que nos regrese el programa
     returns: el k-esimo numero de Fibonacci
     '''
-    return pow(0.2, 0.5) * (pow(((1 + pow(5, 0.5))/2), k) - pow(((1 - pow(5, 0.5)) / 2), k))
+    return int(pow(0.2, 0.5) * (pow(((1 + pow(5, 0.5))/2), k) - pow(((1 - pow(5, 0.5)) / 2), k)))
 
 
 print("Fibonacci recursivo")
